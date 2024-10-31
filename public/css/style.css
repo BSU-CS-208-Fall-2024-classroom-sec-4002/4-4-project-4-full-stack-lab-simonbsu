@@ -1,3 +1,28 @@
 body{
-    background-color: hotpink;
+    background-color: rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace;
+}
+
+.button {
+    font-family:'Courier New', Courier, monospace;
+    background-color: green;
+    margin-top: 10px;
+}
+
+.header {
+    height: 36px;
+    background: linear-gradient(
+     white, white 33px,
+     pink 35px, pink 36px);
+}
+
+body {
+    background: repeating-linear-gradient(
+     white, white 25px,
+     #9198e5 26px, #9198e5 27px
+    );
+}
+
+.taskitem { 
+    margin-bottom: 14px;
 }
