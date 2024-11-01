@@ -1,6 +1,10 @@
 body{
     font-family:'Courier New', Courier, monospace;
-    margin: 0px;
+    margin: 0px; /*Makes pink line at the top extend all the way to the borders*/
+    background: repeating-linear-gradient(
+     white, white 25px,
+     #9198e5 26px, #9198e5 27px
+    );
 }
 
 .button {
@@ -17,13 +21,6 @@ body{
     background: linear-gradient(
      white, white 33px,
      pink 35px, pink 36px);
-}
-
-body {
-    background: repeating-linear-gradient(
-     white, white 25px,
-     #9198e5 26px, #9198e5 27px
-    );
 }
 
 .taskitem { 
@@ -44,6 +41,11 @@ body {
     margin-top:24px;
 }
 
+/*Since the whole body doesn't have the left margin
+    anymore, add it in for the elements that still
+    need a margin. */
 form, li {
     margin-left: 8px;
 }
+
+h1 { padding-left:8px;}
