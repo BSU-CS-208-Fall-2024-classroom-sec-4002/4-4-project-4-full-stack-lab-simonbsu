@@ -21,9 +21,7 @@ app.use(express.urlencoded({ extended: false }))
 app.get('/', function (req, res) {
     console.log('GET called')
     const local = { tasks: [] }
-    console.log(local)
     db.each('SELECT id, task FROM todo', function (err, row) {
-        console.log("RF")
         if (err) {
         console.log(err)
         } else {
